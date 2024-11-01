@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;800;900&family=Outfit:wght@100;200;500;600;900&family=Poppins:wght@300;400;500&family=Raleway:wght@600;900&display=swap');
+
+
+* {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #a1ffce;
+  background: -webkit-linear-gradient(to right, #faffd1, #a1ffce);
+  background: linear-gradient(to right, #faffd1, #a1ffce);
+}
+
+/* accuiel */
+#accuiel {
+  width: 100%;
+  display: flex;
+  height: 80vh;
+}
+#accuiel #text_accuiel {
+  width: 25%;
+  margin-top: 20px;
+  padding: 20px;
+  left:20%;
+  position: relative;
+}
+#accuiel #text_accuiel p span {
+  font-size: 30px;
+  font-weight: 600;
+}
+#accuiel #text_accuiel p {
+  margin-top: 150px;
+}
+#accuiel #text_accuiel #acceuil_btn {
+  display: flex;
+}
+#accuiel #text_accuiel #acceuil_btn button {
+  width: 150px;
+  padding: 5px;
+  border-radius: 25px;
+  margin-right: 20px;
+  margin-top: 50px;
+  color: white;
+  transition: 1s;
+  background-size: 200% auto;
+  background-image: linear-gradient(
+    to right,
+    rgb(107, 102, 102) 0%,
+    rgb(211, 211, 211) 51%,
+    #3b3b3b 100%
+  );
+  border-color: gray;
+
+}
+#accuiel #text_accuiel #acceuil_btn #recette_btn {
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 68, 0, 0.945) 0%,
+   rgb(214, 140, 112) 51%,
+    rgb(255, 87, 25) 100%
+  );
+  border-color: orangered;
+}
+#accuiel #text_accuiel #acceuil_btn button:hover,
+#accuiel #text_accuiel #acceuil_btn #recette_btn:hover {
+    transform: scale(1.1);
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+}
+#accuiel #img_bg {
+  width: 80%;
+  margin-top: 30px;
+  left: 18%;
+  border-radius: 25px;
+  position: relative;
+  background-image: url(../assets/me_logo_1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+
+#accuiel #img_accuiel {
+  width: 50%;
+  margin-top: 30px;
+  left: -18%;
+  position: relative;
+  background-image: url(../assets/pexels-polina-tankilevitch-3872373-removebg-preview.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: img 10s linear infinite;
+}
+
+@keyframes img {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+/*index recette*/
+#index_recette_header p {
+  text-align: center;
+}
+#index_recette_header p span {
+  font-size: 30px;
+  font-weight: 600;
+}
+#index_recette {
+  padding-top: 6rem;
+  width: 100%;
+  display: flex;
+}
+#cards {
+  margin-left: 250px;
+}
+
+#index_recette .recette_card {
+  width: 20%;
+  height: 40vh;
+  margin-right: 20px;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition:4s;
+    animation: cards 2s ;
+}
+@keyframes cards {
+  0% {
+  transform: scale(0.2);
+  }
+ 100% {
+  transform: scale(1.1);
+  }
+ }
+
+#index_recette .recette_card:hover {
+ transform: scale(1.1);
+ background-color: orangered;
+ color: white;
+}
+
+ .recette_card:hover .index_recette_btn{
+  transform: scale(1.1);
+  background-color: rgb(0, 0, 0);
+  color: white;
+  
+}
+
+#index_recette .recette_card p {
+  margin-top: 10px;
+}
+#index_recette .recette_card p span {
+  font-size: 25px;
+  font-weight: 600;
+}
+#index_recette .recette_card img {
+  width: 180px;
+  height: 180px;
+  margin-top: -8rem;
+  margin-left: 4rem;
+  border-radius: 50px;
+}
+#index_recette .index_recette_btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  left: -160%;
+  position: relative;
+  margin-top: 430px;
+  background-color: orangered;
+  color: white;
+  border-color: orangered;
+}
+
+/*index about*/
+#index_about {
+  margin-top: 7rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+#index_about #about_img {
+  margin-top: 100px;
+  width: 30%;
+  background-image: url(../assets/pexels-daniel-reche-718241-3616956-removebg-previe.png);
+  background-repeat: no-repeat;
+  
+}
+#index_about #about_img:hover {
+  transform: scale(1.5);
+  left: 10%;
+  margin-top: 150px;
+  position: relative;
+  background-image: url(../assets/pexels-mario-mota-235376087-14935009-removebg-preview.png);
+}
+#index_about #about_text {
+  width: 30%;
+  margin-top: 120px;
+}
+#index_about #about_text header {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: rgb(188, 57, 10);
+}
+#index_about #about_text p span {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+hr{
+  margin:50px 0px ;
+}

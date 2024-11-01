@@ -1,0 +1,74 @@
+*{
+padding: 0px;
+padding:0px
+}
+#recette_card{
+display: flex;
+}
+
+#recette_card .img{
+    padding-left: 350px;
+    width: 40%;
+    margin-top: 1rem;
+}
+
+#recette_card .img img{
+    width:500px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+#ingredients {
+    margin-top: 150px;
+     width: 80%;
+     height: 50vh;
+     margin-left: 160px;
+
+ }
+#ingredients table, th, td {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     margin-left: 300px;
+     padding: 10px;
+    
+ }
+
+#ingredients table, th {
+margin: 10px;
+width: 50%;
+}
+#ingredients header,
+.preparation header {
+    font-size: 30px;
+    font-weight: 600;
+    }
+
+
+.instructions {
+    padding-left: 250px;
+    display: flex;
+    margin-top:-100px;
+}
+.instructions p{
+margin-left: 25px;
+font-weight: 600;
+font-size: 25px;
+
+}
+.instructions i{
+    font-size: 35px;
+    color: orangered;
+
+}
+.instructions p span{
+margin-left: 50px;
+font-weight:100;
+font-size: 20px;
+
+}
+
+.preparation{
+    padding-left: 250px;
+    width: 30%;
+    margin-top: 50px;
+
+}

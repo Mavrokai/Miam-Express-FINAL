@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Miam Express</title>
+    <link rel="icon" type="image/x-icon" href="./assets/me_logo_1.png">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div id="nav">
+            <div id="logo">
+                <a href="./index.html">
+                    <img src="./assets/me_logo_1.png" alt="logo de Miam Express  : Une lunch box en forme de coeur !">
+                </a>
+            </div>
+            <div id="links">
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./allrecettes.html">Recettes</a></li>
+                    <li><a href="./livres.html">Livre</a></li>
+                </ul>
+            </div>
+            <div class="btn">
+                <a href="./contact.html">
+                    <button>contacts</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main>
+
+        <h1>Bienvenue sur notre site de cuisine en lunch box !🍜</h1>
+
+
+            <p id="textP">Nous sommes quatre amis passionnés de cuisine, prêts à vous aider à préparer des déjeuners savoureux et
+                équilibrés. Valentin, notre principal acteur, organise le site et crée des lunch boxes colorées avec des
+                recettes du monde entier. Corentin apporte une touche d'authenticité avec ses plats français
+                traditionnels,
+                comme la quiche lorraine. Merveille, experte en batchcooking, optimise votre temps en proposant des
+                recettes
+                équilibrées et savoureuses à préparer à l'avance. Enfin, Jonathan nous fait découvrir des saveurs
+                africaines
+                avec ses plats colorés et épicés, alliant tradition et créativité.
+                </p>
+            <p id="text2">
+                Suivez-nous pour des astuces et recettes qui rendront vos pauses déjeuner plus délicieuses ! Bon appétit
+                !
+            </p>
+
+        <div class="photo">
+
+            <div id="img1">
+                <img src="./images/Corentin.jpg">
+                <img src="./images/yoka.jpg">
+                <img src="./images/Valentin.png">
+                <img src="./images/Merveille.jpg">
+            </div>
+
+
+        </div>
+        <div id="form_img"><img src="./assets/pexels-polina-tankilevitch-3872373-removebg-preview.png"></div>
+        <form onsubmit="handleFormSubmit(event)">
+            <div class="formulaire">
+                <h3>Contactez-nous</h3>
+                <div>
+                    <label for="name"></label>
+                    <input type="text" name="nom" id="nom" autocomplete="off" placeholder="Votre nom" required><br>
+                    <label for="name"></label>
+                    <input type="text" name="prenom" id="prenom" autocomplete="off" placeholder="Votre prenom" required><br>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" autocomplete="off" placeholder="Votre email" required><br>
+                    <div class="message">
+                        <label for="message"></label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="message"
+                            required></textarea><br>
+                    </div>
+
+
+                    <button type="submit">Envoyer</button>
+                </div>
+        </form>
+        </div>
+
+
+        <!-- pop-up -->
+        <div class="popup-overlay" id="popup" style="display: none;">
+            <div class="popup-content">
+                <h2>Message envoyé !</h2>
+                <p>Merci de nous avoir contactés. Nous vous répondrons dans les plus brefs délais.</p>
+                <button onclick="hidePopup()">Fermer</button>
+
+
+            </div>
+        </div>
+
+
+
+
+        </div>
+
+        </div>
+    </main>
+    <footer>
+        <div id="footer">
+            <div id="footer_about">
+                <p>
+                    <span>A propos de nous</span><br /><br />
+                    Notre objectif est de partager avec vous des recettes et astuces
+                    culinaires simples à réaliser, même avec un emploi du temps chargé.
+                    Notre site propose un blog et un livre de recettes conçus pour des
+                    plats savoureux, accessibles et rapides à préparer. Rejoignez-nous
+                    pour cuisiner avec plaisir et simplicité !
+                </p>
+            </div>
+            <div id="footer_contact">
+                <p><a href="./contact.html">Nous contacter</a></p>
+                <div id="icons">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/goodfoodeveryday"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/goodfoodeveryday"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/goodfood"><i class="fa-brands fa-tiktok"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <p>©Tous droits réservés | Miam Express | 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./javascript/contact.js"></script>
+
+</body>
+
+</html>

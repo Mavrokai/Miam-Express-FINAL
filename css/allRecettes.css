@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;800;900&family=Outfit:wght@100;200;500;600;900&family=Poppins:wght@300;400;500&family=Raleway:wght@600;900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+#tbody {
+  display: flex;
+  flex-wrap: wrap;
+  
+  padding-top: 5rem;  
+  justify-content: space-around;
+}
+
+
+#card{
+  display: block;
+  flex-direction: column;
+  width: 25%;
+  height: 40rem;
+
+  margin-bottom: 10em;
+  text-align: center;
+
+  border-radius: 25px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+   border: none;
+   margin-top: 7em;
+   padding-inline: 1rem;
+   transition: 1s;
+  
+}
+#card:hover{
+  background-color: rgb(201, 56, 3);
+  color: white;
+  transform: scale(1.1);
+}
+
+
+#ImageR {
+  border-radius: 25px;
+  height: 200px;
+  width: 200px;
+
+
+  margin: -7rem 0rem 0rem 0rem;
+  
+}
+
+h5 {
+  padding: 1em 1em 1em 1em;
+  margin-top: 1em;
+}
+
+
+#Bcard {
+  width: 150px;
+  padding: 5px;
+  border-radius: 25px;
+  color: white;
+  transition: 1s;
+  background-size: 200% auto;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 68, 0, 0.945) 0%,
+   rgb(214, 140, 112) 51%,
+    rgb(255, 87, 25) 100%
+  );
+  border-color: orangered;
+
+  position: absolute;
+  margin-top: 51em;
+  margin-left: -24rem;
+}
+#Bcard:hover {
+  transform: scale(1.1);
+    background-position: right center; /* change the direction of the change here */
+}
+#up{
+  font-size: 40px;
+  color: orangered;
+  margin-left: 50px;
+}
+#up i{
+  color: orangered;
+
+}

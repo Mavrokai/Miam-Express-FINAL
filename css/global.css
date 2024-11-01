@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;800;900&family=Outfit:wght@100;200;500;600;900&family=Poppins:wght@300;400;500&family=Raleway:wght@600;900&display=swap');
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #a1ffce;
+    background: -webkit-linear-gradient(to right, #faffd1, #a1ffce);
+    background: linear-gradient(to right, #faffd1, #a1ffce);
+  }
+  
+
+#nav {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 0px;
+    position: relative;
+    background: rgba(211, 255, 240, 0.555);
+    z-index: 1;
+  }
+  #logo img{
+    width: 90px;
+    height: 90px;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+  #links {
+    left: 37%;
+    position: relative;
+  }
+  #links ul {
+    list-style: none;
+    display: flex;
+  }
+  #links ul li {
+    margin-right: 30px;
+  }
+  #links ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  #links ul li a:hover {
+    border-bottom: solid 2px orangered;
+    transition-duration: 250ms;
+    
+  }
+
+  .btn {
+    left: 55%;
+    position: relative;
+  }
+  .btn button {
+    width: 200px;
+    padding: 5px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    border: 0px solid blanchedalmond;
+    border-radius: 25px;
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+      #f09819 51%,
+      #ff512f 100%
+    );
+  }
+  .btn button:hover {
+    transform: scale(1.1);
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+  }
+
+    /*footer*/
+#footer {
+  margin-top: 50px;
+  border-top: solid 1px Black;
+  box-shadow:  0px 10px 50px 11px rgba(59,255,188,0.37);
+  display: flex;
+  background-color: rgba(255, 113, 77, 0.863);
+  
+ 
+  }
+  #footer_about {
+    padding: 50px;
+    width: 30%;
+    margin-left: 150px;
+   
+  }
+  #footer_about p span {
+    font-size: 35px;
+    font-weight: 600;
+  }
+ 
+  #footer_contact {
+    padding: 50px;
+    width: 30%;
+    margin-left: 250px;
+  }
+  #footer_contact p a {
+    font-style: none;
+    color: black;
+    font-size: 35px;
+    margin-left: 35px;
+    color: white;
+  }
+  #footer_contact #icons ul {
+    display: flex;
+    font-size: 40px;
+    list-style: none;
+    margin-top: 20px;
+  }
+  #footer_contact #icons ul li {
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  #footer_contact #icons ul li a {
+    color: rgb(186, 15, 0);
+    text-decoration: none;
+  }
+  #footer_contact #icons ul li :hover {
+ transform: scale(1.2);
+  }
+  
